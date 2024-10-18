@@ -1,6 +1,6 @@
 ﻿namespace Victuz.Models
 {
-    public class Member
+    public class Member : User
     {
     }
 }
