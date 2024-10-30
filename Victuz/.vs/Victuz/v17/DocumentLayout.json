@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\proposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\proposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\boardmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\boardmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,6 +59,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Proposition.cs",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Proposition.cs",
+              "RelativeDocumentMoniker": "Models\\Proposition.cs",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Proposition.cs",
+              "RelativeToolTip": "Models\\Proposition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:40:35.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Agenda.cs",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Agenda.cs",
+              "RelativeDocumentMoniker": "Models\\Agenda.cs",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Agenda.cs",
+              "RelativeToolTip": "Models\\Agenda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:40:18.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "Models\\Status.cs",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Status.cs",
+              "RelativeToolTip": "Models\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:39:49.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -63,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Message.cs",
               "RelativeDocumentMoniker": "Models\\Message.cs",
@@ -75,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Forum.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Forum.cs",
               "RelativeDocumentMoniker": "Models\\Forum.cs",
@@ -87,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Member.cs",
               "RelativeDocumentMoniker": "Models\\Member.cs",
@@ -99,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Activity.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Activity.cs",
               "RelativeDocumentMoniker": "Models\\Activity.cs",
@@ -108,19 +155,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:56:57.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BoardMember.cs",
-              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\BoardMember.cs",
-              "RelativeDocumentMoniker": "Models\\BoardMember.cs",
-              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\BoardMember.cs",
-              "RelativeToolTip": "Models\\BoardMember.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:40:24.279Z",
-              "EditorCaption": ""
             }
           ]
         }

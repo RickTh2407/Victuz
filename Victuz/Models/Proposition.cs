@@ -1,6 +1,6 @@
 ﻿namespace Victuz.Models
 {
-    public class BoardMember
+    public class Proposition
     {
     }
 }
