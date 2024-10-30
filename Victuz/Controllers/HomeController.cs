@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Victuz.Models;
+using Activity = System.Diagnostics.Activity;
 
 namespace Victuz.Controllers
 {
