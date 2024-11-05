@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\victuz\\victuz\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -16,6 +17,33 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\victuz\\victuz\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\wwwroot\\css\\flatly.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:wwwroot\\css\\flatly.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,11 +63,15 @@
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\victuz\\victuz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\victuz\\victuz\\migrations\\20241030192749_addvictuzdbtodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\migrations\\20241030192749_addvictuzdbtodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:migrations\\20241030192749_addvictuzdbtodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -102,7 +134,76 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T16:26:37.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Flatly.css",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\wwwroot\\css\\Flatly.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\Flatly.css",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\wwwroot\\css\\Flatly.css",
+              "RelativeToolTip": "wwwroot\\css\\Flatly.css",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAG0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-05T16:26:21.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VictuzDB.cs",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Data\\VictuzDB.cs",
+              "RelativeDocumentMoniker": "Data\\VictuzDB.cs",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Data\\VictuzDB.cs",
+              "RelativeToolTip": "Data\\VictuzDB.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T13:42:00.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Agenda.cs",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Agenda.cs",
+              "RelativeDocumentMoniker": "Models\\Agenda.cs",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Agenda.cs",
+              "RelativeToolTip": "Models\\Agenda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:40:18.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T16:32:31.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Models\\Member.cs",
               "RelativeDocumentMoniker": "Models\\Member.cs",
@@ -114,6 +215,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "VictuzDB.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Data\\VictuzDB.cs",
@@ -139,6 +241,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 6,
+>>>>>>> Stashed changes
               "Title": "Activity.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Models\\Activity.cs",
               "RelativeDocumentMoniker": "Models\\Activity.cs",
@@ -146,11 +251,16 @@
               "RelativeToolTip": "Models\\Activity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:56:57.364Z"
+              "WhenOpened": "2024-10-18T10:56:57.364Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Models\\Status.cs",
               "RelativeDocumentMoniker": "Models\\Status.cs",
@@ -162,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Proposition.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Models\\Proposition.cs",
               "RelativeDocumentMoniker": "Models\\Proposition.cs",
@@ -170,11 +280,12 @@
               "RelativeToolTip": "Models\\Proposition.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T11:40:35.295Z"
+              "WhenOpened": "2024-10-30T11:40:35.295Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -182,10 +293,12 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T19:22:01.401Z"
+              "WhenOpened": "2024-10-30T19:22:01.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Views\\Shared\\_Layout.cshtml",
@@ -199,6 +312,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 10,
+>>>>>>> Stashed changes
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -206,11 +322,12 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T18:06:33.95Z"
+              "WhenOpened": "2024-11-03T18:06:33.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "20241030192749_AddVictuzDbToDatabase.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Migrations\\20241030192749_AddVictuzDbToDatabase.cs",
               "RelativeDocumentMoniker": "Migrations\\20241030192749_AddVictuzDbToDatabase.cs",
@@ -218,11 +335,12 @@
               "RelativeToolTip": "Migrations\\20241030192749_AddVictuzDbToDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T19:27:49.819Z"
+              "WhenOpened": "2024-10-30T19:27:49.819Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -230,11 +348,12 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-30T19:17:50.173Z"
+              "WhenOpened": "2024-10-30T19:17:50.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\Victuz\\Victuz\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -242,7 +361,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-28T12:02:15.548Z"
+              "WhenOpened": "2024-10-28T12:02:15.548Z",
+              "EditorCaption": ""
             }
           ]
         }
