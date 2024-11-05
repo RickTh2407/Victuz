@@ -8,5 +8,7 @@ namespace Victuz.Models
         [Required]
         public string Name { get; set; }
         public DateTime Date { get; set; }
+        public List<Activity> Activities { get; set; }
+
     }
 }
