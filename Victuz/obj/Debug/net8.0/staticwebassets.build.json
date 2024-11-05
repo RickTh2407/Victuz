@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "ei4kBIiKb/240gOYkIjRTuEUDStX/tg1ArONaXvZudo=",
+=======
+  "Hash": "1bxkcG1fF/e0I9BvRM2cyltTvbfacQnrlVlrwyaTKO4=",
+>>>>>>> 1a866184c2268ea86fdd6087793dc4520a7ba05d
   "Source": "Victuz",
   "BasePath": "_content/Victuz",
   "Mode": "Default",
@@ -891,7 +895,30 @@
       "OriginalItemSpec": "C:\\Users\\mslie\\Source\\Repos\\Victuz\\Victuz\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Victuz.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\mslie\\Source\\Repos\\Victuz\\Victuz\\wwwroot\\css\\site.css",
+=======
+      "Identity": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\wwwroot\\css\\Flatly.css",
+      "SourceId": "Victuz",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\wwwroot\\",
+      "BasePath": "_content/Victuz",
+      "RelativePath": "css/Flatly.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Flatly.css"
+    },
+    {
+      "Identity": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\wwwroot\\css\\site.css",
+>>>>>>> 1a866184c2268ea86fdd6087793dc4520a7ba05d
       "SourceId": "Victuz",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\mslie\\Source\\Repos\\Victuz\\Victuz\\wwwroot\\",
