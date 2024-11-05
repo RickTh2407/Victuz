@@ -1,0 +1,22 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Victuz/.vs/ProjectEvaluation/victuz.metadata.v9.bin
+/Victuz/.vs/ProjectEvaluation/victuz.projects.v9.bin
+/Victuz/.vs/ProjectEvaluation/victuz.strings.v9.bin
+/Victuz/.vs/Victuz/FileContentIndex/035a0299-8612-4a61-b769-5c22f4a5444f.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/0627ebe3-86a1-4501-ada2-b69e46df5f53.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/0bffafd6-b1c3-473e-b77c-08e47bd41cf7.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/186ce946-1b3b-4a2b-8739-de66ab921bf3.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/27d6d2dd-4836-4fe6-8c5f-4c855ecd7be5.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/531c1f3e-1e7c-40b7-9fcf-d39a0f091f61.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/8871e8ce-f1b5-4404-85df-72ac9ec6c327.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/c517f2cb-b712-481c-96d9-b52f414b8673.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/e2ed2a4e-951e-403c-a823-45fbb23e83a2.vsidx
+/Victuz/.vs/Victuz/FileContentIndex/fd69580c-2afd-4a60-a0d3-bea7dd7fcdaa.vsidx
+/Victuz/obj/Debug/net8.0/Victuz.AssemblyInfo.cs
+/Victuz/obj/Debug/net8.0/Victuz.AssemblyInfoInputs.cache
+/Victuz/obj/Debug/net8.0/Victuz.assets.cache
+/Victuz/obj/Debug/net8.0/Victuz.csproj.AssemblyReference.cache
+/Victuz/obj/Debug/net8.0/Victuz.GeneratedMSBuildEditorConfig.editorconfig
