@@ -181,15 +181,11 @@
       "PackagePath": "staticwebassets\\Victuz.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
-      "Id": "C:\\Users\\mslie\\Source\\Repos\\Victuz\\Victuz\\wwwroot\\css\\site.css",
-=======
-      "Id": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\wwwroot\\css\\Flatly.css",
+      "Id": "C:\\Users\\mslie\\Source\\Repos\\Victuz\\Victuz\\wwwroot\\css\\Flatly.css",
       "PackagePath": "staticwebassets\\css\\Flatly.css"
     },
     {
-      "Id": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\wwwroot\\css\\site.css",
->>>>>>> 1a866184c2268ea86fdd6087793dc4520a7ba05d
+      "Id": "C:\\Users\\mslie\\Source\\Repos\\Victuz\\Victuz\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
