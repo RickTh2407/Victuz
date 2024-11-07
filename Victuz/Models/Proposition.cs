@@ -15,8 +15,9 @@ namespace Victuz.Models
         public DateTime Date { get; set; }
         [Required]
         public string MemberName { get; set; }
-        [NotMapped]
-        public Status Status { get; set; }
+        public virtual Status Statuses { get; set; }
+        public virtual Member Members { get; set; }
+
         [Required]
         public string StatusDisplay { get; set; } = "In behandeling";
 
