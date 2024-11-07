@@ -29,5 +29,7 @@ namespace Victuz.Models
 
         [Required]
         public bool Board { get; set; } = false;
+
+        public virtual ICollection<>
     }
 }
