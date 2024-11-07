@@ -8,6 +8,7 @@ namespace Victuz.Models
         [Required]
         public string Name { get; set; }
         public string Description { get; set; }
-        public List<Proposition> Propositions { get; set; }
+        public virtual ICollection<Proposition> Propositions { get; set; }
+
     }
 }

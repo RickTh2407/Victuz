@@ -11,7 +11,12 @@ namespace Victuz.Models
         public DateTime Date { get; set; }
         public string Location { get; set; }
         public string Category { get; set; }
-        public List<Member> Members { get; set; }
+
+        public virtual ICollection<Member> Members { get; set; }
+        public virtual Agenda Agendas { get; set; }
+
+
+
 
         public void AddToPlanner()
         {

@@ -10,5 +10,8 @@ namespace Victuz.Models
         public DateTime Date { get; set; }
         public List<Activity> Activities { get; set; }
 
+        public virtual ICollection<Activity> Activitys { get; set; }
+
+
     }
 }

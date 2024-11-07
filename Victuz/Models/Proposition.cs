@@ -10,7 +10,10 @@ namespace Victuz.Models
         public string Description { get; set; }
         public DateTime Date { get; set; }
         public string MemberName { get; set; }
-        public string Status { get; set; }
+
+        public virtual Status Statuses { get; set; }
+        public virtual Member Members { get; set; }
+
 
         public void ChangeStatus()
         {

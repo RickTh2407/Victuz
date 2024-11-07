@@ -10,6 +10,12 @@ namespace Victuz.Models
         public string LastName { get; set; }
         public string Email { get; set; }
         public string ScreenName { get; set; }
+        public string Password { get; set; }
         public bool Board { get; set; }
+        public bool Validated { get; set; }
+        public virtual ICollection<Proposition> Propositions { get; set; }  
+        public virtual ICollection<Activity> Activitys { get; set; }
+
+
     }
 }
