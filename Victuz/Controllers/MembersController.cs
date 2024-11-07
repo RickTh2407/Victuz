@@ -26,7 +26,7 @@ namespace Victuz.Controllers
         // GET: Members
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Member.ToListAsync());
+            return View(await _context.Members.ToListAsync());
         }
 
         // GET: Members/Details/5
@@ -37,7 +37,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member
+            var member = await _context.Members
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (member == null)
             {
@@ -78,7 +78,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member.FindAsync(id);
+            var member = await _context.Members.FindAsync(id);
             if (member == null)
             {
                 return NotFound();
@@ -129,7 +129,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member
+            var member = await _context.Members
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (member == null)
             {
@@ -144,10 +144,10 @@ namespace Victuz.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var member = await _context.Member.FindAsync(id);
+            var member = await _context.Members.FindAsync(id);
             if (member != null)
             {
-                _context.Member.Remove(member);
+                _context.Members.Remove(member);
             }
 
             await _context.SaveChangesAsync();
@@ -156,7 +156,7 @@ namespace Victuz.Controllers
 
         private bool MemberExists(int id)
         {
-            return _context.Member.Any(e => e.Id == id);
+            return _context.Members.Any(e => e.Id == id);
         }
 
         public IActionResult MemberRegistration()
@@ -171,7 +171,7 @@ namespace Victuz.Controllers
             {
                 try
                 {
-                    _context.Member.Add(member);
+                    _context.Members.Add(member);
                     _context.SaveChanges();
 
                     ModelState.Clear();
@@ -198,7 +198,7 @@ namespace Victuz.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = _context.Member.Where(x => x.Email == member.Email && x.Password == member.Password).FirstOrDefault();
+                var user = _context.Members.Where(x => x.Email == member.Email && x.Password == member.Password).FirstOrDefault();
                 if (user != null)
                 {
                     // Success, create cookie

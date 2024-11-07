@@ -22,7 +22,7 @@ namespace Victuz.Controllers
         // GET: Agenda
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Agenda.ToListAsync());
+            return View(await _context.Agendas.ToListAsync());
         }
 
         // GET: Agenda/Details/5
@@ -33,7 +33,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var agenda = await _context.Agenda
+            var agenda = await _context.Agendas
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (agenda == null)
             {
@@ -72,8 +72,8 @@ namespace Victuz.Controllers
             {
                 return NotFound();
             }
-
-            var agenda = await _context.Agenda.FindAsync(id);
+            
+            var agenda = await _context.Agendas.FindAsync(id);
             if (agenda == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var agenda = await _context.Agenda
+            var agenda = await _context.Agendas
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (agenda == null)
             {
@@ -139,10 +139,10 @@ namespace Victuz.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var agenda = await _context.Agenda.FindAsync(id);
+            var agenda = await _context.Agendas.FindAsync(id);
             if (agenda != null)
             {
-                _context.Agenda.Remove(agenda);
+                _context.Agendas.Remove(agenda);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace Victuz.Controllers
 
         private bool AgendaExists(int id)
         {
-            return _context.Agenda.Any(e => e.Id == id);
+            return _context.Agendas.Any(e => e.Id == id);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Victuz.Controllers
         // GET: Propositions
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Proposition.ToListAsync());
+            return View(await _context.Propositions.ToListAsync());
         }
 
         // GET: Propositions/Details/5
@@ -33,7 +33,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var proposition = await _context.Proposition
+            var proposition = await _context.Propositions
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (proposition == null)
             {
@@ -73,7 +73,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var proposition = await _context.Proposition.FindAsync(id);
+            var proposition = await _context.Propositions.FindAsync(id);
             if (proposition == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var proposition = await _context.Proposition
+            var proposition = await _context.Propositions
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (proposition == null)
             {
@@ -139,10 +139,10 @@ namespace Victuz.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var proposition = await _context.Proposition.FindAsync(id);
+            var proposition = await _context.Propositions.FindAsync(id);
             if (proposition != null)
             {
-                _context.Proposition.Remove(proposition);
+                _context.Propositions.Remove(proposition);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace Victuz.Controllers
 
         private bool PropositionExists(int id)
         {
-            return _context.Proposition.Any(e => e.Id == id);
+            return _context.Propositions.Any(e => e.Id == id);
         }
     }
 }

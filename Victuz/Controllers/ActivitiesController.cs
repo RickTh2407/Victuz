@@ -22,7 +22,7 @@ namespace Victuz.Controllers
         // GET: Activities
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Activity.ToListAsync());
+            return View(await _context.Activities.ToListAsync());
         }
 
         // GET: Activities/Details/5
@@ -33,7 +33,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var activity = await _context.Activity
+            var activity = await _context.Activities
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (activity == null)
             {
@@ -73,7 +73,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var activity = await _context.Activity.FindAsync(id);
+            var activity = await _context.Activities.FindAsync(id);
             if (activity == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var activity = await _context.Activity
+            var activity = await _context.Activities
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (activity == null)
             {
@@ -139,10 +139,10 @@ namespace Victuz.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var activity = await _context.Activity.FindAsync(id);
+            var activity = await _context.Activities.FindAsync(id);
             if (activity != null)
             {
-                _context.Activity.Remove(activity);
+                _context.Activities.Remove(activity);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace Victuz.Controllers
 
         private bool ActivityExists(int id)
         {
-            return _context.Activity.Any(e => e.Id == id);
+            return _context.Activities.Any(e => e.Id == id);
         }
     }
 }

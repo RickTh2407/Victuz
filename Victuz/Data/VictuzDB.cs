@@ -10,11 +10,11 @@ namespace Victuz.Data
 {
     public class VictuzDB : DbContext
     {
-        public DbSet<Activity> Activity { get; set; }
-        public DbSet<Agenda> Agenda { get; set; }
-        public DbSet<Member> Member { get; set; }
-        public DbSet<Proposition> Proposition { get; set; }
-        public DbSet<Status> Status { get; set; }
+        public DbSet<Activity> Activities { get; set; }
+        public DbSet<Agenda> Agendas { get; set; }
+        public DbSet<Member> Members { get; set; }
+        public DbSet<Proposition> Propositions { get; set; }
+        public DbSet<Status> Statuses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
