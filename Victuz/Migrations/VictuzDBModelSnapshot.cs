@@ -30,6 +30,9 @@ namespace Victuz.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("AgendaId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Category")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -52,6 +55,8 @@ namespace Victuz.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AgendaId");
+
                     b.ToTable("Activity");
 
                     b.HasData(
@@ -59,7 +64,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-                            Date = new DateTime(2024, 10, 30, 20, 27, 48, 581, DateTimeKind.Local).AddTicks(5965),
+                            Date = new DateTime(2024, 11, 7, 18, 21, 7, 866, DateTimeKind.Local).AddTicks(4720),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -90,7 +95,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 10, 30, 20, 27, 48, 581, DateTimeKind.Local).AddTicks(6158),
+                            Date = new DateTime(2024, 11, 7, 18, 21, 7, 866, DateTimeKind.Local).AddTicks(4886),
                             Name = "Test"
                         });
                 });
@@ -102,6 +107,9 @@ namespace Victuz.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ActivityId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("Board")
                         .HasColumnType("bit");
@@ -119,11 +127,20 @@ namespace Victuz.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ScreenName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("Validated")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ActivityId");
 
                     b.ToTable("Member");
 
@@ -132,10 +149,12 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Board = true,
-                            Email = "Test@Gmail.com",
-                            LastName = "Dummy",
-                            Name = "Test",
-                            ScreenName = "Tester"
+                            Email = "administrator@gmail.com",
+                            LastName = "Istrator",
+                            Name = "Admin",
+                            Password = "admin",
+                            ScreenName = "Tester",
+                            Validated = true
                         });
                 });
 
@@ -163,11 +182,16 @@ namespace Victuz.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<string>("Status")
+                    b.Property<string>("StatusDisplay")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("StatusId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("StatusId");
 
                     b.ToTable("Proposition");
 
@@ -175,11 +199,11 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 10, 30, 20, 27, 48, 581, DateTimeKind.Local).AddTicks(6185),
+                            Date = new DateTime(2024, 11, 7, 18, 21, 7, 866, DateTimeKind.Local).AddTicks(4919),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",
-                            Status = "In Progress"
+                            StatusDisplay = "In behandeling"
                         });
                 });
 
@@ -211,6 +235,42 @@ namespace Victuz.Migrations
                             Description = "Test",
                             Name = "In Progress"
                         });
+                });
+
+            modelBuilder.Entity("Victuz.Models.Activity", b =>
+                {
+                    b.HasOne("Victuz.Models.Agenda", null)
+                        .WithMany("Activities")
+                        .HasForeignKey("AgendaId");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Member", b =>
+                {
+                    b.HasOne("Victuz.Models.Activity", null)
+                        .WithMany("Members")
+                        .HasForeignKey("ActivityId");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Proposition", b =>
+                {
+                    b.HasOne("Victuz.Models.Status", null)
+                        .WithMany("Propositions")
+                        .HasForeignKey("StatusId");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Activity", b =>
+                {
+                    b.Navigation("Members");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Agenda", b =>
+                {
+                    b.Navigation("Activities");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Status", b =>
+                {
+                    b.Navigation("Propositions");
                 });
 #pragma warning restore 612, 618
         }

@@ -76,10 +76,12 @@ namespace Victuz.Data
             Member memberEntity = new Member()
             {
                 Id = 1,
-                Name = "Test",
-                LastName = "Dummy",
-                Email = "Test@Gmail.com",
+                Name = "Admin",
+                LastName = "Istrator",
+                Email = "administrator@gmail.com",
+                Password = "admin",
                 ScreenName = "Tester",
+                Validated = true,
                 Board = true
             };
             modelBuilder.Entity<Member>()
@@ -93,7 +95,7 @@ namespace Victuz.Data
                 Description = "Test",
                 Date = DateTime.Now,
                 MemberName = "Test",
-                Status = "In Progress"
+                StatusDisplay = "In behandeling"
             };
             modelBuilder.Entity<Proposition>()
                 .HasData(propositionEntity);

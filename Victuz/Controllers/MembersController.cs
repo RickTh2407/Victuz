@@ -7,7 +7,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Victuz.Data;
 using Victuz.Models;
-using Victuz.Entities;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Victuz.Controllers
 {
@@ -156,18 +159,79 @@ namespace Victuz.Controllers
             return _context.Member.Any(e => e.Id == id);
         }
 
+        public IActionResult MemberRegistration()
+        {
+            return View();
+        }
+
         [HttpPost]
-        public IActionResult MemberRegistration(Registration register)
+        public IActionResult MemberRegistration(Member member)
         {
             if (ModelState.IsValid)
             {
-                Member member = new Member();
-                member.Email = register.Email;
-                member.Name = register.Name;
-                member.LastName = register.LastName;
-                member.ScreenName = register.ScreenName;
-                member.
+                try
+                {
+                    _context.Member.Add(member);
+                    _context.SaveChanges();
+
+                    ModelState.Clear();
+                    ViewBag.Message = $"{member.Name} {member.LastName} succesvol geregistreerd. Alstublief log in.";
+                }
+                catch (DbUpdateException ex)
+                {
+
+                    ModelState.AddModelError("","Alstublieft gebruik een uniek emailadres of wachtwoord.");
+                    return View(member);
+                }
+                return View();
             }
+            return View(member);
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(Member member)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = _context.Member.Where(x => x.Email == member.Email && x.Password == member.Password).FirstOrDefault();
+                if (user != null)
+                {
+                    // Success, create cookie
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, member.Email),
+                        new Claim("Name", member.Name),
+                        new Claim(ClaimTypes.Role, "Member"),
+                    };
+
+                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                    HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+
+                    return RedirectToAction("SecurePage");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Uw ingevoerde emailadres of wachtwoord was niet correct.");
+                }
+            }
+            return View(member);
+        }
+
+        public IActionResult LogOut()
+        {
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index");
+        }
+        [Authorize]
+        public IActionResult SecurePage()
+        {
+            ViewBag.Name = HttpContext.User.Identity.Name;
+            return View();
         }
     }
 }
