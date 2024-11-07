@@ -17,6 +17,7 @@ namespace Victuz.Models
         public string Location { get; set; }
         [Required]
         public string Category { get; set; }
+       
         public virtual ICollection<Member> Members { get; set; }
         public virtual Agenda Agendas { get; set; }
 

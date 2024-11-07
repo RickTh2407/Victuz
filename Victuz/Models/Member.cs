@@ -30,6 +30,7 @@ namespace Victuz.Models
 
         [Required]
         public bool Board { get; set; } = false;
+
         public virtual ICollection<Proposition> Propositions { get; set; }
         public virtual ICollection<Activity> Activities { get; set; }
 

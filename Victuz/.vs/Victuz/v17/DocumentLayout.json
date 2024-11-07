@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\hp\\documents\\github\\victuz\\victuz\\controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\proposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\proposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\hp\\documents\\github\\victuz\\victuz\\controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\hp\\documents\\github\\victuz\\victuz\\controllers\\propositionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,18 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\hp\\documents\\github\\victuz\\victuz\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\proposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\proposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\.nuget\\packages\\Microsoft.VisualStudio.Offline||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
@@ -57,11 +57,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "PropositionsController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Controllers\\PropositionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PropositionsController.cs",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MembersController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Controllers\\MembersController.cs",
               "RelativeDocumentMoniker": "Controllers\\MembersController.cs",
@@ -87,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "AgendaController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Controllers\\AgendaController.cs",
               "RelativeDocumentMoniker": "Controllers\\AgendaController.cs",
@@ -100,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ActivitiesController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Controllers\\ActivitiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActivitiesController.cs",
@@ -109,6 +109,84 @@
               "ViewState": "AQIAAGUAAAAAAAAAAAAuwJgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T20:48:45.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VictuzDB.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Data\\VictuzDB.cs",
+              "RelativeDocumentMoniker": "Data\\VictuzDB.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Data\\VictuzDB.cs",
+              "RelativeToolTip": "Data\\VictuzDB.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAuwAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T19:40:19.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Agenda.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Agenda.cs",
+              "RelativeDocumentMoniker": "Models\\Agenda.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Agenda.cs",
+              "RelativeToolTip": "Models\\Agenda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T17:19:46.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Activity.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Activity.cs",
+              "RelativeDocumentMoniker": "Models\\Activity.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Activity.cs",
+              "RelativeToolTip": "Models\\Activity.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T17:14:42.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Proposition.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Proposition.cs",
+              "RelativeDocumentMoniker": "Models\\Proposition.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Proposition.cs",
+              "RelativeToolTip": "Models\\Proposition.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T16:30:36.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "Models\\Member.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Member.cs",
+              "RelativeToolTip": "Models\\Member.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAcwB8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T16:34:26.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "Models\\Status.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Status.cs",
+              "RelativeToolTip": "Models\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T17:09:16.942Z",
               "EditorCaption": ""
             },
             {
@@ -135,84 +213,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-07T20:05:19.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VictuzDB.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Data\\VictuzDB.cs",
-              "RelativeDocumentMoniker": "Data\\VictuzDB.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Data\\VictuzDB.cs",
-              "RelativeToolTip": "Data\\VictuzDB.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAuwAgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T19:40:19.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Agenda.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Agenda.cs",
-              "RelativeDocumentMoniker": "Models\\Agenda.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Agenda.cs",
-              "RelativeToolTip": "Models\\Agenda.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:19:46.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Activity.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Activity.cs",
-              "RelativeDocumentMoniker": "Models\\Activity.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Activity.cs",
-              "RelativeToolTip": "Models\\Activity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:14:42.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Status.cs",
-              "RelativeDocumentMoniker": "Models\\Status.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Status.cs",
-              "RelativeToolTip": "Models\\Status.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:09:16.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Member.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Member.cs",
-              "RelativeDocumentMoniker": "Models\\Member.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Member.cs",
-              "RelativeToolTip": "Models\\Member.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T16:34:26.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Proposition.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Proposition.cs",
-              "RelativeDocumentMoniker": "Models\\Proposition.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Victuz\\Victuz\\Models\\Proposition.cs",
-              "RelativeToolTip": "Models\\Proposition.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T16:30:36.046Z",
               "EditorCaption": ""
             }
           ]
