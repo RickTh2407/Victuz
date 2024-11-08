@@ -8289,23 +8289,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rickt\\.nuget\\packages\\": {},
+    "C:\\Users\\mslie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\VictuzAPI.csproj",
+      "projectUniqueName": "C:\\Users\\mslie\\Source\\Repos\\RickTh2407\\Victuz\\VictuzAPI\\VictuzAPI.csproj",
       "projectName": "VictuzAPI",
-      "projectPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\VictuzAPI.csproj",
-      "packagesPath": "C:\\Users\\rickt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\obj\\",
+      "projectPath": "C:\\Users\\mslie\\Source\\Repos\\RickTh2407\\Victuz\\VictuzAPI\\VictuzAPI.csproj",
+      "packagesPath": "C:\\Users\\mslie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mslie\\Source\\Repos\\RickTh2407\\Victuz\\VictuzAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rickt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mslie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8321,8 +8321,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Victuz.csproj": {
-              "projectPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Victuz.csproj"
+            "C:\\Users\\mslie\\Source\\Repos\\RickTh2407\\Victuz\\Victuz\\Victuz.csproj": {
+              "projectPath": "C:\\Users\\mslie\\Source\\Repos\\RickTh2407\\Victuz\\Victuz\\Victuz.csproj"
             }
           }
         }
@@ -8376,7 +8376,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
