@@ -12,7 +12,7 @@ namespace Victuz.Models
         [Required]
         public string? Description { get; set; }
 
-        public virtual ICollection<Proposition> Propositions { get; set; }
+        public virtual ICollection<Proposition>? Propositions { get; set; }
 
     }
 }

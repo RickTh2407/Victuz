@@ -12,6 +12,6 @@ namespace Victuz.Models
         [Required]
         public DateTime Date { get; set; }
 
-        public virtual ICollection<Activity> Activities { get; set; }
+        public virtual ICollection<Activity>? Activities { get; set; }
     }
 }

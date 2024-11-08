@@ -18,9 +18,9 @@ namespace Victuz.Models
         [Required]
         public string? Category { get; set; }
 
-        public virtual ICollection<Member> Members { get; set; }
+        public virtual ICollection<Member>? Members { get; set; }
 
-        public virtual Agenda Agendas { get; set; }
+        public virtual Agenda? Agendas { get; set; }
 
         public void AddToPlanner()
         {

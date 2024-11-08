@@ -16,9 +16,9 @@ namespace Victuz.Models
         [Required]
         public string? MemberName { get; set; }
 
-        public virtual Status Statuses { get; set; }
+        public virtual Status? Statuses { get; set; }
 
-        public virtual Member Members { get; set; }
+        public virtual Member? Members { get; set; }
 
         [Required]
         public string? StatusDisplay { get; set; } = "In behandeling";
