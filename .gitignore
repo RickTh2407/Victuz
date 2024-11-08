@@ -13,3 +13,4 @@
 /Victuz/obj/Debug/net8.0
 /Victuz/.vs/Victuz/FileContentIndex
 /Victuz/.vs/Victuz/v17/.suo
+**/Victuz/appsettings.Development.json
