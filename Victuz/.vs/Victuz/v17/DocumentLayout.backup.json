@@ -1,50 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\",
+  "WorkspaceRootPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108125436_AddVictuzDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241108125436_AddVictuzDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108124845_AddVictusDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241108124845_AddVictusDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108124435_AddVictusDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241108124435_AddVictusDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108112809_AddVictuzDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241108112809_AddVictuzDBToDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:data\\victuzdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\views\\agenda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\agenda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\views\\propositions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\views\\propositions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\propositions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\mslie\\source\\repos\\rickth2407\\victuz\\victuz\\views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\activities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,6 +36,14 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -70,15 +58,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -95,15 +75,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20241108125436_AddVictuzDBToDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108125436_AddVictuzDBToDatabase.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241108125436_AddVictuzDBToDatabase.cs",
-              "ToolTip": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108125436_AddVictuzDBToDatabase.cs",
-              "RelativeToolTip": "Migrations\\20241108125436_AddVictuzDBToDatabase.cs",
+              "Title": "20241108112809_AddVictuzDBToDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108112809_AddVictuzDBToDatabase.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241108112809_AddVictuzDBToDatabase.cs",
+              "ToolTip": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108112809_AddVictuzDBToDatabase.cs",
+              "RelativeToolTip": "Migrations\\20241108112809_AddVictuzDBToDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:54:36.637Z",
+              "WhenOpened": "2024-11-08T11:28:09.435Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\VictuzAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\appsettings.json",
+              "RelativeToolTip": "..\\VictuzAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-08T11:48:56.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\Program.cs",
+              "RelativeDocumentMoniker": "..\\VictuzAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\Program.cs",
+              "RelativeToolTip": "..\\VictuzAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:48:53.747Z"
             },
             {
               "$type": "Document",
@@ -174,22 +178,22 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "VictuzDB.cs",
-              "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Data\\VictuzDB.cs",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Data\\VictuzDB.cs",
               "RelativeDocumentMoniker": "Data\\VictuzDB.cs",
-              "ToolTip": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Data\\VictuzDB.cs",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Data\\VictuzDB.cs",
               "RelativeToolTip": "Data\\VictuzDB.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAowIMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T02:25:32.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Activities\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Activities\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Activities\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Activities\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Activities\\Index.cshtml",
               "RelativeToolTip": "Views\\Activities\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -198,11 +202,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Propositions\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Propositions\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Propositions\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Propositions\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Propositions\\Index.cshtml",
               "RelativeToolTip": "Views\\Propositions\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -211,11 +215,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Agenda\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Agenda\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Agenda\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Agenda\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Agenda\\Index.cshtml",
               "RelativeToolTip": "Views\\Agenda\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -224,16 +228,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T01:32:54.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T01:32:54.357Z"
             }
           ]
         }
