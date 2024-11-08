@@ -137,12 +137,12 @@ namespace Victuz.Migrations
             migrationBuilder.InsertData(
                 table: "Activities",
                 columns: new[] { "Id", "AgendasId", "Category", "Date", "Description", "Location", "Name" },
-                values: new object[] { 1, null, "Workshop", new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(2996), "Test Description", "Test room", "Test Name" });
+                values: new object[] { 1, null, "Workshop", new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651), "Test Description", "Test room", "Test Name" });
 
             migrationBuilder.InsertData(
                 table: "Agendas",
                 columns: new[] { "Id", "Date", "Name" },
-                values: new object[] { 1, new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3332), "Test" });
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907), "Test" });
 
             migrationBuilder.InsertData(
                 table: "Members",
@@ -152,7 +152,7 @@ namespace Victuz.Migrations
             migrationBuilder.InsertData(
                 table: "Propositions",
                 columns: new[] { "Id", "Date", "Description", "MemberName", "MembersId", "Name", "StatusDisplay", "StatusesId" },
-                values: new object[] { 1, new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3390), "Test", "Test", null, "Test", "In behandeling", null });
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62), "Test", "Test", null, "Test", "In behandeling", null });
 
             migrationBuilder.InsertData(
                 table: "Statuses",

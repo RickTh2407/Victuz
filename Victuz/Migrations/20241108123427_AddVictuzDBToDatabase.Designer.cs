@@ -12,7 +12,7 @@ using Victuz.Data;
 namespace Victuz.Migrations
 {
     [DbContext(typeof(VictuzDB))]
-    [Migration("20241108112809_AddVictuzDBToDatabase")]
+    [Migration("20241108123427_AddVictuzDBToDatabase")]
     partial class AddVictuzDBToDatabase
     {
         /// <inheritdoc />
@@ -82,7 +82,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(2996),
+                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -113,7 +113,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3332),
+                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907),
                             Name = "Test"
                         });
                 });
@@ -217,7 +217,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3390),
+                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",

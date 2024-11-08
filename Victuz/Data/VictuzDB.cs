@@ -5,6 +5,7 @@ using System.Reflection.Emit;
 using System.Web;
 using Victuz.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Connections;
 
 namespace Victuz.Data
 {
@@ -18,8 +19,11 @@ namespace Victuz.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connection = @"Data Source=.;Initial Catalog=VictuzDB;Integrated Security=True;Trust Server Certificate=True";
-            optionsBuilder.UseSqlServer(connection);
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+           .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+           .AddJsonFile("appsettings.Development.json")
+           .Build();
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
