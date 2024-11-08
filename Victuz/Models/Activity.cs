@@ -17,10 +17,10 @@ namespace Victuz.Models
         public string Location { get; set; }
         [Required]
         public string Category { get; set; }
-       
+        [NotMapped]
         public virtual ICollection<Member> Members { get; set; }
+        [NotMapped]
         public virtual Agenda Agendas { get; set; }
-
 
         public void AddToPlanner()
         {

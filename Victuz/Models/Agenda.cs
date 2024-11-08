@@ -11,6 +11,7 @@ namespace Victuz.Models
         public string Name { get; set; }
         [Required]
         public DateTime Date { get; set; }
+        [NotMapped]
         public virtual ICollection<Activity> Activities { get; set; }
     }
 }

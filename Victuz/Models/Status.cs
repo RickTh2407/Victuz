@@ -11,6 +11,7 @@ namespace Victuz.Models
         public string Name { get; set; }
         [Required]
         public string Description { get; set; }
+        [NotMapped]
         public virtual ICollection<Proposition> Propositions { get; set; }
 
     }
