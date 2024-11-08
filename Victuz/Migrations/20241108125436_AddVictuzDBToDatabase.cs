@@ -26,22 +26,18 @@ namespace Victuz.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Members",
+                name: "Newses",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ScreenName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Validated = table.Column<bool>(type: "bit", nullable: false),
-                    Board = table.Column<bool>(type: "bit", nullable: false)
+                    Title = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Members", x => x.Id);
+                    table.PrimaryKey("PK_Newses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -59,25 +55,47 @@ namespace Victuz.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Activities",
+                name: "Members",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AgendasId = table.Column<int>(type: "int", nullable: true)
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ScreenName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Validated = table.Column<bool>(type: "bit", nullable: false),
+                    Board = table.Column<bool>(type: "bit", nullable: false),
+                    NewsId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Activities", x => x.Id);
+                    table.PrimaryKey("PK_Members", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Activities_Agendas_AgendasId",
-                        column: x => x.AgendasId,
-                        principalTable: "Agendas",
+                        name: "FK_Members_Newses_NewsId",
+                        column: x => x.NewsId,
+                        principalTable: "Newses",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Category",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MemberId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Category", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Category_Members_MemberId",
+                        column: x => x.MemberId,
+                        principalTable: "Members",
                         principalColumn: "Id");
                 });
 
@@ -111,6 +129,35 @@ namespace Victuz.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Activities",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AgendasId = table.Column<int>(type: "int", nullable: true),
+                    CategoryId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Activities", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Activities_Agendas_AgendasId",
+                        column: x => x.AgendasId,
+                        principalTable: "Agendas",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Activities_Category_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Category",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ActivityMember",
                 columns: table => new
                 {
@@ -136,23 +183,28 @@ namespace Victuz.Migrations
 
             migrationBuilder.InsertData(
                 table: "Activities",
-                columns: new[] { "Id", "AgendasId", "Category", "Date", "Description", "Location", "Name" },
-                values: new object[] { 1, null, "Workshop", new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(2996), "Test Description", "Test room", "Test Name" });
+                columns: new[] { "Id", "AgendasId", "Category", "CategoryId", "Date", "Description", "Location", "Name" },
+                values: new object[] { 1, null, "Workshop", null, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769), "Test Description", "Test room", "Test Name" });
 
             migrationBuilder.InsertData(
                 table: "Agendas",
                 columns: new[] { "Id", "Date", "Name" },
-                values: new object[] { 1, new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3332), "Test" });
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919), "Test" });
 
             migrationBuilder.InsertData(
                 table: "Members",
-                columns: new[] { "Id", "Board", "Email", "LastName", "Name", "Password", "ScreenName", "Validated" },
-                values: new object[] { 1, true, "administrator@gmail.com", "Istrator", "Admin", "admin", "Tester", true });
+                columns: new[] { "Id", "Board", "Email", "LastName", "Name", "NewsId", "Password", "ScreenName", "Validated" },
+                values: new object[] { 1, true, "administrator@gmail.com", "Istrator", "Admin", null, "admin", "Tester", true });
+
+            migrationBuilder.InsertData(
+                table: "Newses",
+                columns: new[] { "Id", "CreatedDate", "Description", "Title" },
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3995), "Test description", "Test Title" });
 
             migrationBuilder.InsertData(
                 table: "Propositions",
                 columns: new[] { "Id", "Date", "Description", "MemberName", "MembersId", "Name", "StatusDisplay", "StatusesId" },
-                values: new object[] { 1, new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3390), "Test", "Test", null, "Test", "In behandeling", null });
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963), "Test", "Test", null, "Test", "In behandeling", null });
 
             migrationBuilder.InsertData(
                 table: "Statuses",
@@ -165,9 +217,24 @@ namespace Victuz.Migrations
                 column: "AgendasId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Activities_CategoryId",
+                table: "Activities",
+                column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ActivityMember_MembersId",
                 table: "ActivityMember",
                 column: "MembersId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Category_MemberId",
+                table: "Category",
+                column: "MemberId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Members_NewsId",
+                table: "Members",
+                column: "NewsId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Propositions_MembersId",
@@ -193,13 +260,19 @@ namespace Victuz.Migrations
                 name: "Activities");
 
             migrationBuilder.DropTable(
-                name: "Members");
-
-            migrationBuilder.DropTable(
                 name: "Statuses");
 
             migrationBuilder.DropTable(
                 name: "Agendas");
+
+            migrationBuilder.DropTable(
+                name: "Category");
+
+            migrationBuilder.DropTable(
+                name: "Members");
+
+            migrationBuilder.DropTable(
+                name: "Newses");
         }
     }
 }

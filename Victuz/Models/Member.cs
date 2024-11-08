@@ -35,5 +35,7 @@ namespace Victuz.Models
 
         public virtual ICollection<Activity>? Activities { get; set; }
 
+        public virtual ICollection<Category>? Categories  { get; set; }
+
     }
 }

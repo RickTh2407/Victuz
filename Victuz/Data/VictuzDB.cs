@@ -15,6 +15,7 @@ namespace Victuz.Data
         public DbSet<Member> Members { get; set; }
         public DbSet<Proposition> Propositions { get; set; }
         public DbSet<Status> Statuses { get; set; }
+        public DbSet<News> Newses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -46,6 +47,16 @@ namespace Victuz.Data
 
             //specify Status
             modelBuilder.Entity<Status>()
+                .Property(v => v.Name)
+                .HasMaxLength(30);
+
+            //specify News
+            modelBuilder.Entity<News>()
+                .Property(v => v.Title)
+                .HasMaxLength(100);
+
+            //specify Category
+            modelBuilder.Entity<Category>()
                 .Property(v => v.Name)
                 .HasMaxLength(30);
 
@@ -109,6 +120,25 @@ namespace Victuz.Data
             };
             modelBuilder.Entity<Status>()
                 .HasData(statusEntity);
+
+            //data seed News
+            News newsEntity = new News()
+            {
+                Id = 1,
+                Title = "Test Title",
+                Description= "Test description",
+                CreatedDate = DateTime.Now
+            };
+            modelBuilder.Entity<News>()
+                .HasData(newsEntity);
+
+            //data seed Category
+            Category categoryEntity = new Category()
+            {
+                Id = 1,
+                Name = "Test Category",
+                Description = "Test Description",
+            };
         }
     }
 }

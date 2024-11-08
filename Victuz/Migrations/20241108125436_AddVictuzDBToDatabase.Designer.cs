@@ -12,7 +12,7 @@ using Victuz.Data;
 namespace Victuz.Migrations
 {
     [DbContext(typeof(VictuzDB))]
-    [Migration("20241108112809_AddVictuzDBToDatabase")]
+    [Migration("20241108125436_AddVictuzDBToDatabase")]
     partial class AddVictuzDBToDatabase
     {
         /// <inheritdoc />
@@ -55,6 +55,9 @@ namespace Victuz.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
@@ -75,6 +78,8 @@ namespace Victuz.Migrations
 
                     b.HasIndex("AgendasId");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Activities");
 
                     b.HasData(
@@ -82,7 +87,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(2996),
+                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -113,9 +118,34 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3332),
+                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919),
                             Name = "Test"
                         });
+                });
+
+            modelBuilder.Entity("Victuz.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("MemberId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("Victuz.Models.Member", b =>
@@ -142,6 +172,9 @@ namespace Victuz.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<int?>("NewsId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -154,6 +187,8 @@ namespace Victuz.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("NewsId");
 
                     b.ToTable("Members");
 
@@ -168,6 +203,41 @@ namespace Victuz.Migrations
                             Password = "admin",
                             ScreenName = "Tester",
                             Validated = true
+                        });
+                });
+
+            modelBuilder.Entity("Victuz.Models.News", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .IsRequired()
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Newses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3995),
+                            Description = "Test description",
+                            Title = "Test Title"
                         });
                 });
 
@@ -217,7 +287,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3390),
+                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",
@@ -276,7 +346,25 @@ namespace Victuz.Migrations
                         .WithMany("Activities")
                         .HasForeignKey("AgendasId");
 
+                    b.HasOne("Victuz.Models.Category", null)
+                        .WithMany("Activities")
+                        .HasForeignKey("CategoryId");
+
                     b.Navigation("Agendas");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Category", b =>
+                {
+                    b.HasOne("Victuz.Models.Member", null)
+                        .WithMany("Categories")
+                        .HasForeignKey("MemberId");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Member", b =>
+                {
+                    b.HasOne("Victuz.Models.News", null)
+                        .WithMany("Members")
+                        .HasForeignKey("NewsId");
                 });
 
             modelBuilder.Entity("Victuz.Models.Proposition", b =>
@@ -299,9 +387,21 @@ namespace Victuz.Migrations
                     b.Navigation("Activities");
                 });
 
+            modelBuilder.Entity("Victuz.Models.Category", b =>
+                {
+                    b.Navigation("Activities");
+                });
+
             modelBuilder.Entity("Victuz.Models.Member", b =>
                 {
+                    b.Navigation("Categories");
+
                     b.Navigation("Propositions");
+                });
+
+            modelBuilder.Entity("Victuz.Models.News", b =>
+                {
+                    b.Navigation("Members");
                 });
 
             modelBuilder.Entity("Victuz.Models.Status", b =>
