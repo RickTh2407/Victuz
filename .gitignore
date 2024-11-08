@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Victuz/FileContentIndex
+/.vs/Victuz/v17
+/Victuz/.vs/Victuz/FileContentIndex
+*.json
+/Victuz/obj/Debug/net8.0/Victuz.AssemblyInfo.cs
+/Victuz/obj/Debug/net8.0/Victuz.AssemblyInfoInputs.cache
+/Victuz/obj/Debug/net8.0/Victuz.assets.cache
+*.BuildWithSkipAnalyzers
+/Victuz/obj/Debug/net8.0/Victuz.GeneratedMSBuildEditorConfig.editorconfig
+*.cache
+*.props
+*.targets
