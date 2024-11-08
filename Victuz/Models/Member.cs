@@ -12,7 +12,7 @@ namespace Victuz.Models
         public string? Name { get; set; }
         
         [Required(ErrorMessage = "Achternaam is verplicht.")]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
         
         [Required(ErrorMessage = "Email is verplicht.")]
         [EmailAddress(ErrorMessage = "Alstublieft, gebruik een geldig email adres.")]
