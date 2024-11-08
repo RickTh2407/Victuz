@@ -12,23 +12,6 @@ namespace Victuz.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Activities",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Activities", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Agendas",
                 columns: table => new
                 {
@@ -76,6 +59,29 @@ namespace Victuz.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Activities",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AgendasId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Activities", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Activities_Agendas_AgendasId",
+                        column: x => x.AgendasId,
+                        principalTable: "Agendas",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Propositions",
                 columns: table => new
                 {
@@ -85,28 +91,58 @@ namespace Victuz.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     MemberName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StatusDisplay = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StatusId = table.Column<int>(type: "int", nullable: true)
+                    StatusesId = table.Column<int>(type: "int", nullable: true),
+                    MembersId = table.Column<int>(type: "int", nullable: true),
+                    StatusDisplay = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Propositions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Propositions_Statuses_StatusId",
-                        column: x => x.StatusId,
+                        name: "FK_Propositions_Members_MembersId",
+                        column: x => x.MembersId,
+                        principalTable: "Members",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Propositions_Statuses_StatusesId",
+                        column: x => x.StatusesId,
                         principalTable: "Statuses",
                         principalColumn: "Id");
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ActivityMember",
+                columns: table => new
+                {
+                    ActivitiesId = table.Column<int>(type: "int", nullable: false),
+                    MembersId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ActivityMember", x => new { x.ActivitiesId, x.MembersId });
+                    table.ForeignKey(
+                        name: "FK_ActivityMember_Activities_ActivitiesId",
+                        column: x => x.ActivitiesId,
+                        principalTable: "Activities",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ActivityMember_Members_MembersId",
+                        column: x => x.MembersId,
+                        principalTable: "Members",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "Activities",
-                columns: new[] { "Id", "Category", "Date", "Description", "Location", "Name" },
-                values: new object[] { 1, "Workshop", new DateTime(2024, 11, 8, 0, 51, 22, 747, DateTimeKind.Local).AddTicks(9651), "Test Description", "Test room", "Test Name" });
+                columns: new[] { "Id", "AgendasId", "Category", "Date", "Description", "Location", "Name" },
+                values: new object[] { 1, null, "Workshop", new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(2996), "Test Description", "Test room", "Test Name" });
 
             migrationBuilder.InsertData(
                 table: "Agendas",
                 columns: new[] { "Id", "Date", "Name" },
-                values: new object[] { 1, new DateTime(2024, 11, 8, 0, 51, 22, 747, DateTimeKind.Local).AddTicks(9793), "Test" });
+                values: new object[] { 1, new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3332), "Test" });
 
             migrationBuilder.InsertData(
                 table: "Members",
@@ -115,8 +151,8 @@ namespace Victuz.Migrations
 
             migrationBuilder.InsertData(
                 table: "Propositions",
-                columns: new[] { "Id", "Date", "Description", "MemberName", "Name", "StatusDisplay", "StatusId" },
-                values: new object[] { 1, new DateTime(2024, 11, 8, 0, 51, 22, 747, DateTimeKind.Local).AddTicks(9824), "Test", "Test", "Test", "In behandeling", null });
+                columns: new[] { "Id", "Date", "Description", "MemberName", "MembersId", "Name", "StatusDisplay", "StatusesId" },
+                values: new object[] { 1, new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3390), "Test", "Test", null, "Test", "In behandeling", null });
 
             migrationBuilder.InsertData(
                 table: "Statuses",
@@ -124,28 +160,46 @@ namespace Victuz.Migrations
                 values: new object[] { 1, "Test", "In Progress" });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Propositions_StatusId",
+                name: "IX_Activities_AgendasId",
+                table: "Activities",
+                column: "AgendasId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ActivityMember_MembersId",
+                table: "ActivityMember",
+                column: "MembersId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Propositions_MembersId",
                 table: "Propositions",
-                column: "StatusId");
+                column: "MembersId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Propositions_StatusesId",
+                table: "Propositions",
+                column: "StatusesId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Activities");
-
-            migrationBuilder.DropTable(
-                name: "Agendas");
-
-            migrationBuilder.DropTable(
-                name: "Members");
+                name: "ActivityMember");
 
             migrationBuilder.DropTable(
                 name: "Propositions");
 
             migrationBuilder.DropTable(
+                name: "Activities");
+
+            migrationBuilder.DropTable(
+                name: "Members");
+
+            migrationBuilder.DropTable(
                 name: "Statuses");
+
+            migrationBuilder.DropTable(
+                name: "Agendas");
         }
     }
 }

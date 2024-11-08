@@ -12,7 +12,7 @@ using Victuz.Data;
 namespace Victuz.Migrations
 {
     [DbContext(typeof(VictuzDB))]
-    [Migration("20241107235123_AddVictuzDBToDatabase")]
+    [Migration("20241108112809_AddVictuzDBToDatabase")]
     partial class AddVictuzDBToDatabase
     {
         /// <inheritdoc />
@@ -25,6 +25,21 @@ namespace Victuz.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ActivityMember", b =>
+                {
+                    b.Property<int>("ActivitiesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MembersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ActivitiesId", "MembersId");
+
+                    b.HasIndex("MembersId");
+
+                    b.ToTable("ActivityMember");
+                });
+
             modelBuilder.Entity("Victuz.Models.Activity", b =>
                 {
                     b.Property<int>("Id")
@@ -32,6 +47,9 @@ namespace Victuz.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AgendasId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Category")
                         .IsRequired()
@@ -55,6 +73,8 @@ namespace Victuz.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AgendasId");
+
                     b.ToTable("Activities");
 
                     b.HasData(
@@ -62,7 +82,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-                            Date = new DateTime(2024, 11, 8, 0, 51, 22, 747, DateTimeKind.Local).AddTicks(9651),
+                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(2996),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -93,7 +113,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 0, 51, 22, 747, DateTimeKind.Local).AddTicks(9793),
+                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3332),
                             Name = "Test"
                         });
                 });
@@ -170,6 +190,9 @@ namespace Victuz.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("MembersId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(30)
@@ -179,12 +202,14 @@ namespace Victuz.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("StatusId")
+                    b.Property<int?>("StatusesId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("StatusId");
+                    b.HasIndex("MembersId");
+
+                    b.HasIndex("StatusesId");
 
                     b.ToTable("Propositions");
 
@@ -192,7 +217,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 0, 51, 22, 747, DateTimeKind.Local).AddTicks(9824),
+                            Date = new DateTime(2024, 11, 8, 12, 28, 7, 844, DateTimeKind.Local).AddTicks(3390),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",
@@ -230,11 +255,53 @@ namespace Victuz.Migrations
                         });
                 });
 
+            modelBuilder.Entity("ActivityMember", b =>
+                {
+                    b.HasOne("Victuz.Models.Activity", null)
+                        .WithMany()
+                        .HasForeignKey("ActivitiesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Victuz.Models.Member", null)
+                        .WithMany()
+                        .HasForeignKey("MembersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Victuz.Models.Activity", b =>
+                {
+                    b.HasOne("Victuz.Models.Agenda", "Agendas")
+                        .WithMany("Activities")
+                        .HasForeignKey("AgendasId");
+
+                    b.Navigation("Agendas");
+                });
+
             modelBuilder.Entity("Victuz.Models.Proposition", b =>
                 {
-                    b.HasOne("Victuz.Models.Status", null)
+                    b.HasOne("Victuz.Models.Member", "Members")
                         .WithMany("Propositions")
-                        .HasForeignKey("StatusId");
+                        .HasForeignKey("MembersId");
+
+                    b.HasOne("Victuz.Models.Status", "Statuses")
+                        .WithMany("Propositions")
+                        .HasForeignKey("StatusesId");
+
+                    b.Navigation("Members");
+
+                    b.Navigation("Statuses");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Agenda", b =>
+                {
+                    b.Navigation("Activities");
+                });
+
+            modelBuilder.Entity("Victuz.Models.Member", b =>
+                {
+                    b.Navigation("Propositions");
                 });
 
             modelBuilder.Entity("Victuz.Models.Status", b =>
