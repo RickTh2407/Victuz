@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Victuz.csproj": {}
+    "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Victuz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Victuz.csproj": {
+    "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Victuz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Victuz.csproj",
+        "projectUniqueName": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Victuz.csproj",
         "projectName": "Victuz",
-        "projectPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Victuz.csproj",
-        "packagesPath": "C:\\Users\\rickt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\obj\\",
+        "projectPath": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Victuz.csproj",
+        "packagesPath": "C:\\Users\\mslie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rickt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mslie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
