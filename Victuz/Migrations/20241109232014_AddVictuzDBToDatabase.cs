@@ -184,12 +184,12 @@ namespace Victuz.Migrations
             migrationBuilder.InsertData(
                 table: "Activities",
                 columns: new[] { "Id", "AgendasId", "Category", "CategoryId", "Date", "Description", "Location", "Name" },
-                values: new object[] { 1, null, "Workshop", null, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(4868), "Test Description", "Test room", "Test Name" });
+                values: new object[] { 1, null, "Workshop", null, new DateTime(2024, 11, 10, 0, 20, 13, 797, DateTimeKind.Local).AddTicks(5775), "Test Description", "Test room", "Test Name" });
 
             migrationBuilder.InsertData(
                 table: "Agendas",
                 columns: new[] { "Id", "Date", "Name" },
-                values: new object[] { 1, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5040), "Test" });
+                values: new object[] { 1, new DateTime(2024, 11, 10, 0, 20, 13, 797, DateTimeKind.Local).AddTicks(5935), "Test" });
 
             migrationBuilder.InsertData(
                 table: "Members",
@@ -199,12 +199,12 @@ namespace Victuz.Migrations
             migrationBuilder.InsertData(
                 table: "Newses",
                 columns: new[] { "Id", "CreatedDate", "Description", "Title" },
-                values: new object[] { 1, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5130), "Test description", "Test Title" });
+                values: new object[] { 1, new DateTime(2024, 11, 10, 0, 20, 13, 797, DateTimeKind.Local).AddTicks(6012), "Test description", "Test Title" });
 
             migrationBuilder.InsertData(
                 table: "Propositions",
                 columns: new[] { "Id", "Date", "Description", "MemberName", "MembersId", "Name", "StatusDisplay", "StatusesId" },
-                values: new object[] { 1, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5075), "Test", "Test", null, "Test", "In behandeling", null });
+                values: new object[] { 1, new DateTime(2024, 11, 10, 0, 20, 13, 797, DateTimeKind.Local).AddTicks(5976), "Test", "Test", null, "Test", "In behandeling", null });
 
             migrationBuilder.InsertData(
                 table: "Statuses",

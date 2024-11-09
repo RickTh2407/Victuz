@@ -1,7 +1,7 @@
-﻿@model IEnumerable<Victuz.Models.Agenda>
+﻿@model IEnumerable<Victuz.Models.Member>
 
 @{
-    ViewData["Title"] = "Agenda";
+    ViewData["Title"] = "BecomeMember";
 }
 
 <center>
@@ -38,39 +38,7 @@
 </nav>
 
 <center>
-    <h2>Agenda</h2>
+    <h2>Waarom wordt je lid?</h2>
 </center>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
