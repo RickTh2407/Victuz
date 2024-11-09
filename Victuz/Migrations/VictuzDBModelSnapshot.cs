@@ -84,11 +84,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-<<<<<<< HEAD
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769),
-=======
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651),
->>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652
+                            Date = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2486),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -119,11 +115,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919),
-=======
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907),
->>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652
+                            Date = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2721),
                             Name = "Test"
                         });
                 });
@@ -240,7 +232,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3995),
+                            CreatedDate = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2959),
                             Description = "Test description",
                             Title = "Test Title"
                         });
@@ -292,11 +284,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963),
-=======
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62),
->>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652
+                            Date = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2899),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",
