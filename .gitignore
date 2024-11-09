@@ -14,6 +14,7 @@
 /Victuz/.vs/Victuz/FileContentIndex
 /Victuz/.vs/Victuz/v17/.suo
 **/Victuz/appsettings.Development.json
+<<<<<<< HEAD
 /Victuz/.vs/Victuz/v17/.suo
 /Victuz/obj/project.assets.json
 /Victuz/obj/Victuz.csproj.nuget.dgspec.json
@@ -51,3 +52,24 @@
 /VictuzAPI/obj/VictuzAPI.csproj.nuget.dgspec.json
 /VictuzAPI/obj/VictuzAPI.csproj.nuget.g.props
 /VictuzAPI/obj/Debug/net8.0/VictuzAPI.AssemblyInfo.cs
+=======
+/Victuz/appsettings.Development.json
+>>>>>>> 549b14fda7c081c657f2065391677072235753c9
+/Victuz/.vs/Victuz/DesignTimeBuild/.dtbcache.v2
+/Victuz/.vs/Victuz/v17/.futdcache.v2
+/Victuz/.vs/Victuz/v17/DocumentLayout.json
+/Victuz/bin/Debug/net8.0/Victuz.dll
+/Victuz/bin/Debug/net8.0/Victuz.exe
+/Victuz/bin/Debug/net8.0/Victuz.pdb
+/Victuz/Controllers/CategoriesController.cs
+/Victuz/obj/Debug/net8.0/ref/Victuz.dll
+/Victuz/obj/Victuz.csproj.nuget.g.props
+/Victuz/obj/Victuz.csproj.nuget.dgspec.json
+/Victuz/obj/project.assets.json
+/Victuz/Views/Activities/Index.cshtml
+/Victuz/obj/Debug/net8.0/Victuz.sourcelink.json
+/Victuz/obj/Debug/net8.0/Victuz.pdb
+/Victuz/obj/Debug/net8.0/Victuz.dll
+/Victuz/obj/Debug/net8.0/Victuz.csproj.CoreCompileInputs.cache
+/Victuz/obj/Debug/net8.0/apphost.exe
+/Victuz/obj/Debug/net8.0/refint/Victuz.dll

@@ -157,7 +157,6 @@ namespace Victuz.Controllers
         {
             return _context.Members.Any(e => e.Id == id);
         }
-
         public IActionResult Registration()
         {
             return View();
@@ -170,7 +169,7 @@ namespace Victuz.Controllers
             {
                 try
                 {
-                    _context.Members.Add(member);
+                    _context.Member.Add(member);
                     _context.SaveChanges();
 
                     ModelState.Clear();
@@ -197,7 +196,7 @@ namespace Victuz.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = _context.Members.Where(x => x.Email == member.Email && x.Password == member.Password).FirstOrDefault();
+                var user = _context.Member.Where(x => x.Email == member.Email && x.Password == member.Password).FirstOrDefault();
                 if (user != null)
                 {
                     // Success, create cookie
@@ -234,3 +233,4 @@ namespace Victuz.Controllers
         }
     }
 }
+

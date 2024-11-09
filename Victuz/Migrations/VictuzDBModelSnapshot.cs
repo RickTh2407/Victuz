@@ -84,7 +84,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5329),
+                            Date = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(4868),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -115,7 +115,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5470),
+                            Date = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5040),
                             Name = "Test"
                         });
                 });
@@ -144,7 +144,7 @@ namespace Victuz.Migrations
 
                     b.HasIndex("MemberId");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Victuz.Models.Member", b =>
@@ -234,7 +234,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5558),
+                            CreatedDate = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5130),
                             Description = "Test description",
                             Title = "Test Title"
                         });
@@ -286,7 +286,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5501),
+                            Date = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5075),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",
