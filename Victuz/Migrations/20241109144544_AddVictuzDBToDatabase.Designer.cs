@@ -12,11 +12,7 @@ using Victuz.Data;
 namespace Victuz.Migrations
 {
     [DbContext(typeof(VictuzDB))]
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-    [Migration("20241108125436_AddVictuzDBToDatabase")]
-========
-    [Migration("20241108123427_AddVictuzDBToDatabase")]
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+    [Migration("20241109144544_AddVictuzDBToDatabase")]
     partial class AddVictuzDBToDatabase
     {
         /// <inheritdoc />
@@ -91,11 +87,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769),
-========
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651),
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5329),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -126,11 +118,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919),
-========
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907),
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5470),
                             Name = "Test"
                         });
                 });
@@ -144,12 +132,14 @@ namespace Victuz.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MemberId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -247,7 +237,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3995),
+                            CreatedDate = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5558),
                             Description = "Test description",
                             Title = "Test Title"
                         });
@@ -299,11 +289,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963),
-========
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62),
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5501),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",

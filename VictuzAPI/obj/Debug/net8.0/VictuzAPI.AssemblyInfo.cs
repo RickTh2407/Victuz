@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VictuzAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ad4f434456101696e22134c158d7f12cc271a75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6dff01e667c46e45b7c4beba1afe4a5e42e2d40")]
 [assembly: System.Reflection.AssemblyProductAttribute("VictuzAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VictuzAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
