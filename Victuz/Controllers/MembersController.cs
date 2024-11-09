@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Victuz.Data;
 using Victuz.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Victuz.Controllers
 {
@@ -50,6 +50,7 @@ namespace Victuz.Controllers
         // GET: Members/Create
         public IActionResult Create()
         {
+
             return View();
         }
 
@@ -58,7 +59,7 @@ namespace Victuz.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,LastName,Email,Password,ScreenName,Validated,Board")] Member member)
+        public async Task<IActionResult> Create([Bind("Id,Name,LastName,Email,ScreenName,Board")] Member member)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +91,7 @@ namespace Victuz.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,LastName,Email,Password,ScreenName,Validated,Board")] Member member)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,LastName,Email,ScreenName,Board")] Member member)
         {
             if (id != member.Id)
             {
@@ -158,13 +159,13 @@ namespace Victuz.Controllers
             return _context.Members.Any(e => e.Id == id);
         }
 
-        public IActionResult Registration()
+        public IActionResult MemberRegistration()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Registration(Member member)
+        public IActionResult MemberRegistration(Member member)
         {
             if (ModelState.IsValid)
             {
@@ -179,7 +180,7 @@ namespace Victuz.Controllers
                 catch (DbUpdateException ex)
                 {
 
-                    ModelState.AddModelError("", "Alstublieft gebruik een uniek emailadres of wachtwoord.");
+                    ModelState.AddModelError("","Alstublieft gebruik een uniek emailadres of wachtwoord.");
                     return View(member);
                 }
                 return View();
@@ -202,11 +203,11 @@ namespace Victuz.Controllers
                 {
                     // Success, create cookie
                     var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, member.Email),
-                    new Claim("Name", member.Name),
-                    new Claim(ClaimTypes.Role, "Member"),
-                };
+                    {
+                        new Claim(ClaimTypes.Name, member.Email),
+                        new Claim("Name", member.Name),
+                        new Claim(ClaimTypes.Role, "Member"),
+                    };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
