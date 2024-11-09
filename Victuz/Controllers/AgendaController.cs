@@ -72,7 +72,7 @@ namespace Victuz.Controllers
             {
                 return NotFound();
             }
-            
+
             var agenda = await _context.Agendas.FindAsync(id);
             if (agenda == null)
             {

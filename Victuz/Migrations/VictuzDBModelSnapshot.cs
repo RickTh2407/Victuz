@@ -84,7 +84,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-                            Date = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2486),
+                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5329),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -115,7 +115,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2721),
+                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5470),
                             Name = "Test"
                         });
                 });
@@ -129,12 +129,14 @@ namespace Victuz.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MemberId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -232,7 +234,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2959),
+                            CreatedDate = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5558),
                             Description = "Test description",
                             Title = "Test Title"
                         });
@@ -284,7 +286,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 11, 8, 14, 57, 48, 718, DateTimeKind.Local).AddTicks(2899),
+                            Date = new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5501),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",
