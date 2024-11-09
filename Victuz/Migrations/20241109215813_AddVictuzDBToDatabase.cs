@@ -80,20 +80,20 @@ namespace Victuz.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Category",
+                name: "Categories",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MemberId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Category", x => x.Id);
+                    table.PrimaryKey("PK_Categories", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Category_Members_MemberId",
+                        name: "FK_Categories_Members_MemberId",
                         column: x => x.MemberId,
                         principalTable: "Members",
                         principalColumn: "Id");
@@ -109,9 +109,9 @@ namespace Victuz.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     MemberName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StatusDisplay = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StatusesId = table.Column<int>(type: "int", nullable: true),
-                    MembersId = table.Column<int>(type: "int", nullable: true),
-                    StatusDisplay = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    MembersId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -151,9 +151,9 @@ namespace Victuz.Migrations
                         principalTable: "Agendas",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Activities_Category_CategoryId",
+                        name: "FK_Activities_Categories_CategoryId",
                         column: x => x.CategoryId,
-                        principalTable: "Category",
+                        principalTable: "Categories",
                         principalColumn: "Id");
                 });
 
@@ -183,22 +183,13 @@ namespace Victuz.Migrations
 
             migrationBuilder.InsertData(
                 table: "Activities",
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.cs
                 columns: new[] { "Id", "AgendasId", "Category", "CategoryId", "Date", "Description", "Location", "Name" },
-                values: new object[] { 1, null, "Workshop", null, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769), "Test Description", "Test room", "Test Name" });
-========
-                columns: new[] { "Id", "AgendasId", "Category", "Date", "Description", "Location", "Name" },
-                values: new object[] { 1, null, "Workshop", new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651), "Test Description", "Test room", "Test Name" });
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.cs
+                values: new object[] { 1, null, "Workshop", null, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(4868), "Test Description", "Test room", "Test Name" });
 
             migrationBuilder.InsertData(
                 table: "Agendas",
                 columns: new[] { "Id", "Date", "Name" },
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.cs
-                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919), "Test" });
-========
-                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907), "Test" });
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.cs
+                values: new object[] { 1, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5040), "Test" });
 
             migrationBuilder.InsertData(
                 table: "Members",
@@ -208,16 +199,12 @@ namespace Victuz.Migrations
             migrationBuilder.InsertData(
                 table: "Newses",
                 columns: new[] { "Id", "CreatedDate", "Description", "Title" },
-                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3995), "Test description", "Test Title" });
+                values: new object[] { 1, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5130), "Test description", "Test Title" });
 
             migrationBuilder.InsertData(
                 table: "Propositions",
                 columns: new[] { "Id", "Date", "Description", "MemberName", "MembersId", "Name", "StatusDisplay", "StatusesId" },
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.cs
-                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963), "Test", "Test", null, "Test", "In behandeling", null });
-========
-                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62), "Test", "Test", null, "Test", "In behandeling", null });
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.cs
+                values: new object[] { 1, new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5075), "Test", "Test", null, "Test", "In behandeling", null });
 
             migrationBuilder.InsertData(
                 table: "Statuses",
@@ -240,8 +227,8 @@ namespace Victuz.Migrations
                 column: "MembersId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Category_MemberId",
-                table: "Category",
+                name: "IX_Categories_MemberId",
+                table: "Categories",
                 column: "MemberId");
 
             migrationBuilder.CreateIndex(
@@ -279,7 +266,7 @@ namespace Victuz.Migrations
                 name: "Agendas");
 
             migrationBuilder.DropTable(
-                name: "Category");
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "Members");

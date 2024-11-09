@@ -12,11 +12,7 @@ using Victuz.Data;
 namespace Victuz.Migrations
 {
     [DbContext(typeof(VictuzDB))]
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-    [Migration("20241108125436_AddVictuzDBToDatabase")]
-========
-    [Migration("20241108123427_AddVictuzDBToDatabase")]
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+    [Migration("20241109215813_AddVictuzDBToDatabase")]
     partial class AddVictuzDBToDatabase
     {
         /// <inheritdoc />
@@ -91,11 +87,7 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769),
-========
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651),
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+                            Date = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(4868),
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -126,11 +118,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919),
-========
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907),
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+                            Date = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5040),
                             Name = "Test"
                         });
                 });
@@ -144,12 +132,14 @@ namespace Victuz.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MemberId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -157,7 +147,7 @@ namespace Victuz.Migrations
 
                     b.HasIndex("MemberId");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Victuz.Models.Member", b =>
@@ -247,7 +237,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3995),
+                            CreatedDate = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5130),
                             Description = "Test description",
                             Title = "Test Title"
                         });
@@ -299,11 +289,7 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
-                            Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963),
-========
-                            Date = new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62),
->>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+                            Date = new DateTime(2024, 11, 9, 22, 58, 13, 125, DateTimeKind.Local).AddTicks(5075),
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",

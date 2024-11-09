@@ -10,22 +10,22 @@ using Victuz.Models;
 
 namespace Victuz.Controllers
 {
-    public class AgendaController : Controller
+    public class CategoriesController : Controller
     {
         private readonly VictuzDB _context;
 
-        public AgendaController(VictuzDB context)
+        public CategoriesController(VictuzDB context)
         {
             _context = context;
         }
 
-        // GET: Agenda
+        // GET: Categories
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Agendas.ToListAsync());
+            return View(await _context.Categories.ToListAsync());
         }
 
-        // GET: Agenda/Details/5
+        // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var agenda = await _context.Agendas
+            var category = await _context.Categories
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (agenda == null)
+            if (category == null)
             {
                 return NotFound();
             }
 
-            return View(agenda);
+            return View(category);
         }
 
-        // GET: Agenda/Create
+        // GET: Categories/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Agenda/Create
+        // POST: Categories/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Date")] Agenda agenda)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description")] Category category)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(agenda);
+                _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(agenda);
+            return View(category);
         }
 
-        // GET: Agenda/Edit/5
+        // GET: Categories/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var agenda = await _context.Agendas.FindAsync(id);
-            if (agenda == null)
+            var category = await _context.Categories.FindAsync(id);
+            if (category == null)
             {
                 return NotFound();
             }
-            return View(agenda);
+            return View(category);
         }
 
-        // POST: Agenda/Edit/5
+        // POST: Categories/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Date")] Agenda agenda)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description")] Category category)
         {
-            if (id != agenda.Id)
+            if (id != category.Id)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace Victuz.Controllers
             {
                 try
                 {
-                    _context.Update(agenda);
+                    _context.Update(category);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AgendaExists(agenda.Id))
+                    if (!CategoryExists(category.Id))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace Victuz.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(agenda);
+            return View(category);
         }
 
-        // GET: Agenda/Delete/5
+        // GET: Categories/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,34 +124,34 @@ namespace Victuz.Controllers
                 return NotFound();
             }
 
-            var agenda = await _context.Agendas
+            var category = await _context.Categories
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (agenda == null)
+            if (category == null)
             {
                 return NotFound();
             }
 
-            return View(agenda);
+            return View(category);
         }
 
-        // POST: Agenda/Delete/5
+        // POST: Categories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var agenda = await _context.Agendas.FindAsync(id);
-            if (agenda != null)
+            var category = await _context.Categories.FindAsync(id);
+            if (category != null)
             {
-                _context.Agendas.Remove(agenda);
+                _context.Categories.Remove(category);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool AgendaExists(int id)
+        private bool CategoryExists(int id)
         {
-            return _context.Agendas.Any(e => e.Id == id);
+            return _context.Categories.Any(e => e.Id == id);
         }
     }
 }
