@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Victuz.Data;
 
@@ -11,9 +12,15 @@ using Victuz.Data;
 namespace Victuz.Migrations
 {
     [DbContext(typeof(VictuzDB))]
-    partial class VictuzDBModelSnapshot : ModelSnapshot
+<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
+    [Migration("20241108125436_AddVictuzDBToDatabase")]
+========
+    [Migration("20241108123427_AddVictuzDBToDatabase")]
+>>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
+    partial class AddVictuzDBToDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -84,11 +91,11 @@ namespace Victuz.Migrations
                         {
                             Id = 1,
                             Category = "Workshop",
-<<<<<<< HEAD
+<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
                             Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769),
-=======
+========
                             Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651),
->>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652
+>>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
                             Description = "Test Description",
                             Location = "Test room",
                             Name = "Test Name"
@@ -119,11 +126,11 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
+<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
                             Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919),
-=======
+========
                             Date = new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907),
->>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652
+>>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
                             Name = "Test"
                         });
                 });
@@ -292,11 +299,11 @@ namespace Victuz.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
+<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.Designer.cs
                             Date = new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963),
-=======
+========
                             Date = new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62),
->>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652
+>>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.Designer.cs
                             Description = "Test",
                             MemberName = "Test",
                             Name = "Test",

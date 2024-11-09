@@ -85,8 +85,8 @@ namespace Victuz.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     MemberId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -183,13 +183,22 @@ namespace Victuz.Migrations
 
             migrationBuilder.InsertData(
                 table: "Activities",
+<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.cs
                 columns: new[] { "Id", "AgendasId", "Category", "CategoryId", "Date", "Description", "Location", "Name" },
-                values: new object[] { 1, null, "Workshop", null, new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5329), "Test Description", "Test room", "Test Name" });
+                values: new object[] { 1, null, "Workshop", null, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3769), "Test Description", "Test room", "Test Name" });
+========
+                columns: new[] { "Id", "AgendasId", "Category", "Date", "Description", "Location", "Name" },
+                values: new object[] { 1, null, "Workshop", new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9651), "Test Description", "Test room", "Test Name" });
+>>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.cs
 
             migrationBuilder.InsertData(
                 table: "Agendas",
                 columns: new[] { "Id", "Date", "Name" },
-                values: new object[] { 1, new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5470), "Test" });
+<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.cs
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3919), "Test" });
+========
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 34, 25, 725, DateTimeKind.Local).AddTicks(9907), "Test" });
+>>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.cs
 
             migrationBuilder.InsertData(
                 table: "Members",
@@ -199,12 +208,16 @@ namespace Victuz.Migrations
             migrationBuilder.InsertData(
                 table: "Newses",
                 columns: new[] { "Id", "CreatedDate", "Description", "Title" },
-                values: new object[] { 1, new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5558), "Test description", "Test Title" });
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3995), "Test description", "Test Title" });
 
             migrationBuilder.InsertData(
                 table: "Propositions",
                 columns: new[] { "Id", "Date", "Description", "MemberName", "MembersId", "Name", "StatusDisplay", "StatusesId" },
-                values: new object[] { 1, new DateTime(2024, 11, 9, 15, 45, 44, 291, DateTimeKind.Local).AddTicks(5501), "Test", "Test", null, "Test", "In behandeling", null });
+<<<<<<<< HEAD:Victuz/Migrations/20241108125436_AddVictuzDBToDatabase.cs
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 54, 35, 725, DateTimeKind.Local).AddTicks(3963), "Test", "Test", null, "Test", "In behandeling", null });
+========
+                values: new object[] { 1, new DateTime(2024, 11, 8, 13, 34, 25, 726, DateTimeKind.Local).AddTicks(62), "Test", "Test", null, "Test", "In behandeling", null });
+>>>>>>>> ec50f7f5bf5d2fb66b7e2979db7e4792d7a38652:Victuz/Migrations/20241108123427_AddVictuzDBToDatabase.cs
 
             migrationBuilder.InsertData(
                 table: "Statuses",

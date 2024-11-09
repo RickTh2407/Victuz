@@ -54,7 +54,7 @@ namespace Victuz.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Date,MemberName,StatusDisplay")] Proposition proposition)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Date,MemberName,Status")] Proposition proposition)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Victuz.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Date,MemberName,StatusDisplay")] Proposition proposition)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Date,MemberName,Status")] Proposition proposition)
         {
             if (id != proposition.Id)
             {
