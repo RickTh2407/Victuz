@@ -87,6 +87,7 @@
 /VictuzAPI/obj/Debug/net8.0/VictuzAPI.csproj.AssemblyReference.cache
 /VictuzAPI/obj/Debug/net8.0/VictuzAPI.GeneratedMSBuildEditorConfig.editorconfig
 /Victuz/appsettings.Development.json
+<<<<<<< HEAD
 /Victuz/obj/Debug/net8.0/Victuz.sourcelink.json
 /Victuz/obj/Debug/net8.0/Victuz.pdb
 /Victuz/.vs/Victuz/DesignTimeBuild/.dtbcache.v2
@@ -99,3 +100,5 @@
 /Victuz/obj/Debug/net8.0/refint/Victuz.dll
 /Victuz/obj/Debug/net8.0/apphost.exe
 /Victuz/obj/Debug/net8.0/Victuz.dll
+=======
+>>>>>>> 4cf445450595567b17de051774f810964db0dc42
