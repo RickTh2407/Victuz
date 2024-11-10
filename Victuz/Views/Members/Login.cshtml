@@ -4,9 +4,14 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
+<center>
+    <h1>Login</h1>
+</center>
 
-<h4>Member</h4>
+<center>
+    <h4>Member</h4>
+</center>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -28,10 +33,12 @@
         </form>
     </div>
 </div>
+<center>
+    <div>
+        Geen account? <a asp-action="Registration">Registreer nu!</a>
+    </div>
+</center>
 
-<div>
-    Geen account? <a asp-action="Registration">Registreer nu!</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
