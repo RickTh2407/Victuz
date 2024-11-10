@@ -193,7 +193,7 @@ namespace Victuz.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(Member member)
+        public async Task<IActionResult> Login(Member member)
         {
             if (ModelState.IsValid)
             {
@@ -201,17 +201,17 @@ namespace Victuz.Controllers
                 if (user != null)
                 {
                     // Success, create cookie
-                    var claims = new List<Claim>
+                var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, member.Email),
-                    new Claim("Name", member.Name),
+                    new Claim("Name", user.Name),
                     new Claim(ClaimTypes.Role, "Member"),
                 };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                    HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-                    return RedirectToAction("SecurePage");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
