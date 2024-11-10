@@ -54,6 +54,7 @@
 /VictuzAPI/obj/Debug/net8.0/VictuzAPI.AssemblyInfo.cs
 =======
 /Victuz/appsettings.Development.json
+<<<<<<< Updated upstream
 >>>>>>> 549b14fda7c081c657f2065391677072235753c9
 /Victuz/.vs/Victuz/DesignTimeBuild/.dtbcache.v2
 /Victuz/.vs/Victuz/v17/.futdcache.v2
@@ -73,3 +74,6 @@
 /Victuz/obj/Debug/net8.0/Victuz.csproj.CoreCompileInputs.cache
 /Victuz/obj/Debug/net8.0/apphost.exe
 /Victuz/obj/Debug/net8.0/refint/Victuz.dll
+=======
+/Victuz/appsettings.Development.json
+>>>>>>> Stashed changes

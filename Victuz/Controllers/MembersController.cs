@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Victuz.Data;
 using Victuz.Models;
+using System.Data.Entity.Infrastructure;
 
 namespace Victuz.Controllers
 {
@@ -104,7 +105,7 @@ namespace Victuz.Controllers
                     _context.Update(member);
                     await _context.SaveChangesAsync();
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException)
                 {
                     if (!MemberExists(member.Id))
                     {
@@ -175,7 +176,7 @@ namespace Victuz.Controllers
                     ModelState.Clear();
                     ViewBag.Message = $"{member.Name} {member.LastName} succesvol geregistreerd. Alstublief log in.";
                 }
-                catch (DbUpdateException ex)
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException ex)
                 {
 
                     ModelState.AddModelError("", "Alstublieft gebruik een uniek emailadres of wachtwoord.");
