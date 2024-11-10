@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\views\\activities\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\activities\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|c:\\users\\rickt\\source\\repos\\victuz\\victuz\\views\\activities\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D930DC5D-978B-4EDA-A2F1-7032DEEFCD05}|Victuz.csproj|solutionrelative:views\\activities\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -195,6 +199,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Activities\\View.cshtml",
+              "RelativeDocumentMoniker": "Views\\Activities\\View.cshtml",
+              "ToolTip": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Activities\\View.cshtml",
+              "RelativeToolTip": "Views\\Activities\\View.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T22:16:30.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Activities\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Activities\\Details.cshtml",
@@ -207,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Registration.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Members\\Registration.cshtml",
               "RelativeDocumentMoniker": "Views\\Members\\Registration.cshtml",
@@ -220,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Members\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Members\\Login.cshtml",
@@ -233,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
@@ -246,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MembersController.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\MembersController.cs",
               "RelativeDocumentMoniker": "Controllers\\MembersController.cs",
@@ -259,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "VictuzDB.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Data\\VictuzDB.cs",
               "RelativeDocumentMoniker": "Data\\VictuzDB.cs",
@@ -272,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -285,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -298,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\News\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\News\\Create.cshtml",
@@ -311,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SecurePage.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Members\\SecurePage.cshtml",
               "RelativeDocumentMoniker": "Views\\Members\\SecurePage.cshtml",
@@ -324,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BecomeMember.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\BecomeMember.cs",
               "RelativeDocumentMoniker": "Controllers\\BecomeMember.cs",
@@ -337,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -350,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -363,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Propositions\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Propositions\\Index.cshtml",
@@ -376,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Victuz.csproj.user",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Victuz.csproj.user",
               "RelativeDocumentMoniker": "Victuz.csproj.user",
@@ -389,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Agenda\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Agenda\\Index.cshtml",
@@ -402,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AgendaController.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\AgendaController.cs",
               "RelativeDocumentMoniker": "Controllers\\AgendaController.cs",
@@ -415,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\News\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\News\\Index.cshtml",
@@ -428,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -441,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -454,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Members\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Members\\Index.cshtml",
@@ -467,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "..\\VictuzAPI\\appsettings.Development.json",
@@ -480,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\VictuzAPI\\appsettings.json",
               "RelativeDocumentMoniker": "..\\VictuzAPI\\appsettings.json",
@@ -493,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "StatusController.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\StatusController.cs",
               "RelativeDocumentMoniker": "Controllers\\StatusController.cs",
@@ -506,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "News.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\News.cs",
               "RelativeDocumentMoniker": "Models\\News.cs",
@@ -519,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "NewsController.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\NewsController.cs",
               "RelativeDocumentMoniker": "Controllers\\NewsController.cs",
@@ -532,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Member.cs",
               "RelativeDocumentMoniker": "Models\\Member.cs",
@@ -545,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "PropositionsController.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\PropositionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PropositionsController.cs",
@@ -558,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ActivitiesController.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\ActivitiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActivitiesController.cs",
@@ -571,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Status.cs",
               "RelativeDocumentMoniker": "Models\\Status.cs",
@@ -584,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Proposition.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Proposition.cs",
               "RelativeDocumentMoniker": "Models\\Proposition.cs",
@@ -597,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Agenda.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Agenda.cs",
               "RelativeDocumentMoniker": "Models\\Agenda.cs",
@@ -610,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -623,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Activity.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Models\\Activity.cs",
               "RelativeDocumentMoniker": "Models\\Activity.cs",
@@ -636,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -649,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\rickt\\source\\repos\\Victuz\\Victuz\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -662,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "20241108112809_AddVictuzDBToDatabase.cs",
               "DocumentMoniker": "C:\\Users\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108112809_AddVictuzDBToDatabase.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\mslie\\source\\repos\\RickTh2407\\Victuz\\Victuz\\Migrations\\20241108112809_AddVictuzDBToDatabase.cs",
