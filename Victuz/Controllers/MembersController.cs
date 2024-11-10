@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Victuz.Data;
 using Victuz.Models;
+using System.Data.Entity.Infrastructure;
 
 namespace Victuz.Controllers
 {
@@ -104,7 +105,7 @@ namespace Victuz.Controllers
                     _context.Update(member);
                     await _context.SaveChangesAsync();
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException)
                 {
                     if (!MemberExists(member.Id))
                     {
@@ -175,7 +176,7 @@ namespace Victuz.Controllers
                     ModelState.Clear();
                     ViewBag.Message = $"{member.Name} {member.LastName} succesvol geregistreerd. Alstublief log in.";
                 }
-                catch (DbUpdateException ex)
+                catch (Microsoft.EntityFrameworkCore.DbUpdateException ex)
                 {
 
                     ModelState.AddModelError("", "Alstublieft gebruik een uniek emailadres of wachtwoord.");
@@ -192,7 +193,7 @@ namespace Victuz.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(Member member)
+        public async Task<IActionResult> Login(Member member)
         {
             if (ModelState.IsValid)
             {
@@ -200,17 +201,17 @@ namespace Victuz.Controllers
                 if (user != null)
                 {
                     // Success, create cookie
-                    var claims = new List<Claim>
+                var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, member.Email),
-                    new Claim("Name", member.Name),
+                    new Claim("Name", user.Name),
                     new Claim(ClaimTypes.Role, "Member"),
                 };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                    HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-                    return RedirectToAction("SecurePage");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {

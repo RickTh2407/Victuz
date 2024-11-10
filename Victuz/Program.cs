@@ -13,7 +13,11 @@ namespace Victuz
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<VictuzDB>();
 
-            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+            {
+                options.LoginPath = "/Members/Login";
+                options.LogoutPath = "/Members/LogOut";
+            });
 
             var app = builder.Build();
 
